@@ -4,5 +4,5 @@ sed '61,77d' gemcitabine.csv > gemcitabine1.csv
 
 paste -d "," gemcitabine1.csv cell_line_expression.csv > gemcitabine2.csv
 
-awk -F, '{OFS=",";print $1,$16933,$16389,$17452,$21080,$23553,$2786,$13305,$19351,$16822,$5753}' paclitaxel2.csv > paclitaxelfeatures.csv
+awk -F, '{OFS=",";print $1,$16933,$16389,$17452,$21080,$23553,$2786,$13305,$19351,$16822,$5753}' paclitaxel2.csv > paclitaxelfeature.csv
  
