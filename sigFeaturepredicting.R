@@ -11,6 +11,6 @@ y <- y[,1] #mateches dimensions to that of pred
 table(pred,y)
 system.time(featureRankedList <- svmrfeFeatureRanking(x, y)) #optional command that runs another svm-rfe model that's slower than sigfeatiure
 pred <- predict(RFE.model, x[ ,featureRankedList])
-table(pred,y)
+table(pred,y) #outputs table with True positives, False positives, True negatives and False negatives.
 table <- table(pred,y)
-write.csv(table, file = "cisplatinresults.csv") #outputs table with True positives, False positives, True negatives and False negatives.
+write.csv(table, file = "cisplatinresults.csv") #writes results to a file
